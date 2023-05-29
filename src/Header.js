@@ -13,19 +13,19 @@ function Header() {
                 <Typography
                     variant="h6"
                     component="div"
-                    sx={{ flexGrow: 1, cursor: 'pointer', marginLeft: 1 }}
+                    sx={{ flexGrow: 1,flexShrink:0, cursor: 'pointer', marginLeft: 1 }}
                     onClick={() => navigate('/')}
                 >
                     Online Satış Sistemi
                 </Typography>
-                <nav>
+                <nav className='flex flex-row'>
                     <Link
                         component={RouterLink}
                         to="/categories"
                         variant="body2"
                         underline="none"
                         color="inherit"
-                        sx={{ marginRight: '1rem' }}
+                        sx={{ marginLeft: '1px' }}
                     >
                         <IconButton size="large" edge="start" color="inherit" aria-label="Kategoriler">
                             <Category />
